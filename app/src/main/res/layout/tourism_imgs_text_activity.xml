@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/tourLinLay"
+        android:gravity="center"
+        android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:focusable="true">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_baseline_image_24"
+        android:scaleType="centerCrop"
+        android:id="@+id/ivtourism"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="3">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/lahore"
+                android:id="@+id/tvtourismTitle"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Locate on Map"
+                android:gravity="center"
+                android:background="#D2E9FF"
+                android:elevation="5dp"
+                android:drawableLeft="@drawable/map"
+                android:id="@+id/tourActimapbtn"/>
+
+            <!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/lahore"-->
+<!--                android:id="@+id/tvtourismsubTitle"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/lahore"-->
+<!--                android:id="@+id/tvtourismrating"/>-->
+        </LinearLayout>
+
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

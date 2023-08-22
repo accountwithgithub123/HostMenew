@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tourism Places"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/tourHeadingText"/>
+
+            <TextView
+                android:id="@+id/tourMoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="View More"
+                android:textColor="@color/purple_500" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tourRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tourMoreText"
+            android:orientation="horizontal"/>
+
+        <!--    <HorizontalScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/horizonScroll"-->
+<!--        android:scrollbars="none">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="10dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/tourism1"-->
+<!--               style="@style/toursimLinearLayout">-->
+<!--                <ImageView-->
+<!--                    style="@style/toursimImgs"-->
+<!--                    android:id="@+id/ivtourism1"/>-->
+<!--                <TextView-->
+<!--                    style="@style/toursimText"-->
+<!--                    android:text="@string/lahore"-->
+<!--                    android:id="@+id/tvtourism1"/>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/tourism2"-->
+<!--               style="@style/toursimLinearLayout">-->
+<!--                <ImageView-->
+<!--                    style="@style/toursimImgs"-->
+<!--                    android:id="@+id/ivtourism2"/>-->
+<!--                <TextView-->
+<!--                    style="@style/toursimText"-->
+<!--                    android:text="@string/lahore"-->
+<!--                    android:id="@+id/tvtourism2"/>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/tourism3"-->
+<!--                style="@style/toursimLinearLayout">-->
+<!--                <ImageView-->
+<!--                    style="@style/toursimImgs"-->
+<!--                    android:id="@+id/ivtourism3"/>-->
+<!--                <TextView-->
+<!--                    style="@style/toursimText"-->
+<!--                    android:text="@string/lahore"-->
+<!--                    android:id="@+id/tvtourism3"/>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/tourism4"-->
+<!--                style="@style/toursimLinearLayout">-->
+<!--                <ImageView-->
+<!--                    style="@style/toursimImgs"-->
+<!--                    android:id="@+id/ivtourism4"/>-->
+<!--                <TextView-->
+<!--                    style="@style/toursimText"-->
+<!--                    android:text="@string/lahore"-->
+<!--                    android:id="@+id/tvtourism4"/>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/tourism5"-->
+<!--                style="@style/toursimLinearLayout">-->
+<!--                <ImageView-->
+<!--                    style="@style/toursimImgs"-->
+<!--                    android:id="@+id/ivtourism5"/>-->
+<!--                <TextView-->
+<!--                    style="@style/toursimText"-->
+<!--                    android:text="@string/lahore"-->
+<!--                    android:id="@+id/tvtourism5"/>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/tourism6"-->
+<!--                style="@style/toursimLinearLayout">-->
+<!--                <ImageView-->
+<!--                    style="@style/toursimImgs"-->
+<!--                    android:id="@+id/ivtourism6"/>-->
+<!--                <TextView-->
+<!--                    style="@style/toursimText"-->
+<!--                    android:text="@string/lahore"-->
+<!--                    android:id="@+id/tvtourism6"/>-->
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </HorizontalScrollView>-->
+    </LinearLayout>
+</ScrollView>
